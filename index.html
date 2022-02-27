@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animation.css">
 </head>
 <body>
   <h1 class="titulo">código secreto</h1>
@@ -13,7 +14,7 @@
   <main class="main">
     <section class="form box">
       <form action="">
-        <label for="input-texto">Apenas letras minúsculas, sem acento</label>
+        <label for="input-texto" class="alertaDeErro">Apenas letras minúsculas, sem acento</label>
         <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
         <input class="btn" type="submit" value="criptografar!" id="btn-cripto">
         <input class="btn" type="submit" value="descriptografar!" id="btn-descripto">
@@ -27,6 +28,9 @@
     </section>
   </main>
 
+  <footer class="rodape">
+    <p class="rodape__paragrafo">Desenvolvido por,<a href="#" class="rodape__link">Izac Silva</a> para o Oracle Next Education</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

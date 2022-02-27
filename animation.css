@@ -1,0 +1,28 @@
+.balancar {
+    animation: balancar .4s;
+    color: red;
+    display: block;
+}
+
+
+
+@keyframes balancar{
+    
+    10%, 40%, 70%{
+        transform: translateX(2px);
+    }
+    25%, 55%, 85%{
+        transform: translateX(-2px)
+    }
+}
+
+.objeto {
+    width: 100px;
+    height: 100px;
+    background: red;
+    cursor: pointer;
+}
+
+.objeto:hover {
+    animation: balancar .4s;
+}
