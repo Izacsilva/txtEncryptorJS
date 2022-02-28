@@ -1,7 +1,8 @@
 .balancar {
-    animation: balancar .4s;
+    animation: balancar 0.4s;
     color: red;
     display: block;
+    
 }
 
 
@@ -14,15 +15,4 @@
     25%, 55%, 85%{
         transform: translateX(-2px)
     }
-}
-
-.objeto {
-    width: 100px;
-    height: 100px;
-    background: red;
-    cursor: pointer;
-}
-
-.objeto:hover {
-    animation: balancar .4s;
 }

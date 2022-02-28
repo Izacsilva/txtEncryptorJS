@@ -19,14 +19,33 @@ Apenas letras minúsculas
 Não permite acentuação     
 */
 
-const campoDeTexto = document.querySelector('.text-input')
 
-campoDeTexto.addEventListener("keypress", function (e) {
+//* Script que impede ao usuário digital números.
+
+const inputEncrypt = document.querySelector('.text-input')
+
+inputEncrypt.addEventListener("keypress", function (e) {
     const keyCode = (e.keyCode ? e.keyCode : e.wich);
 
     if(keyCode > 47 && keyCode < 58) {
         const alertaDeErro = document.querySelector('.alertaDeErro')
-        alertaDeErro.classList.add('balancar') 
+        alertaDeErro.classList.toggle('balancar') 
         e.preventDefault();
-    }
+    } 
+
 })
+//*
+
+document.querySelector('#btn-cripto').addEventListener('click', encrypt)
+
+function encrypt() {
+    const inputEncrypt = document.querySelector('.text-input').value;
+    // const textForEncrypt = inputEncrypt.value;
+
+    console.log(inputEncrypt)
+
+
+
+}
+
+
