@@ -27,9 +27,9 @@ function criptografar() {
     const inputEncrypt = document.querySelector('#input-texto').value;
     
     // txtEnrypt é o resultado da criptografia, feito através do método replace com uso de regexp.
-    let txtEncrypt = inputEncrypt.replace(/a/gi, "ai")
-                                .replace(/e/gi, "enter")            
+    let txtEncrypt = inputEncrypt.replace(/e/gi, "enter")
                                 .replace(/i/gi, "imes")            
+                                .replace(/a/gi, "ai")            
                                 .replace(/o/gi, "ober")            
                                 .replace(/u/gi, "ufat")
 
@@ -50,9 +50,9 @@ function descriptografar() {
     
     // txtEnrypt é o resultado da criptografia, feito através do método replace com uso de regexp.
     let txtEncrypt = inputEncrypt.replaceAll("ai", "a")
-                                .replaceAll("enter", "e")            
-                                .replaceAll("imes", "i")            
-                                .replaceAll("ober", "o")            
+                                .replaceAll("enter", "e")
+                                .replaceAll("imes", "i")
+                                .replaceAll("ober", "o")
                                 .replaceAll("ufat", "u")
 
     
@@ -63,6 +63,13 @@ function descriptografar() {
     const form = document.querySelector("#formulario")
     form.reset()
 
+}
+
+function copy() {
+    let copiaTexto = document.querySelector('#msgResultado')
+    navigator.clipboard.writeText(copiaTexto.value)
+    
+    alert("copiado para área de transferência.")
 }
 
 
@@ -84,6 +91,7 @@ inputEncrypt.addEventListener("keypress", function (e) {
 
 document.querySelector('#btn-cripto').addEventListener('click', criptografar)
 document.querySelector('#btn-descripto').addEventListener('click', descriptografar)
+document.querySelector('#btn-copy').addEventListener('click', copy)
 
 
 
