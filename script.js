@@ -19,8 +19,54 @@ Apenas letras minúsculas
 Não permite acentuação     
 */
 
+// Função encryptografar
 
-//* Script que impede ao usuário digital números.
+function criptografar() {
+
+    // seleciono o campo de texto e pego o conteúdo escrito pelo usuário.
+    const inputEncrypt = document.querySelector('#input-texto').value;
+    
+    // txtEnrypt é o resultado da criptografia, feito através do método replace com uso de regexp.
+    let txtEncrypt = inputEncrypt.replace(/a/gi, "ai")
+                                .replace(/e/gi, "enter")            
+                                .replace(/i/gi, "imes")            
+                                .replace(/o/gi, "ober")            
+                                .replace(/u/gi, "ufat")
+
+    
+    // seleciono o campo de resultados e retorno o valor do texto emcriptografado.           
+    const campoResultado = document.querySelector('#msgResultado')
+    campoResultado.value = txtEncrypt
+
+    const form = document.querySelector("#formulario")
+    form.reset()
+
+}
+
+function descriptografar() {
+
+    // seleciono o campo de texto e pego o conteúdo escrito pelo usuário.
+    const inputEncrypt = document.querySelector('#input-texto').value;
+    
+    // txtEnrypt é o resultado da criptografia, feito através do método replace com uso de regexp.
+    let txtEncrypt = inputEncrypt.replaceAll("ai", "a")
+                                .replaceAll("enter", "e")            
+                                .replaceAll("imes", "i")            
+                                .replaceAll("ober", "o")            
+                                .replaceAll("ufat", "u")
+
+    
+    // seleciono o campo de resultados e retorno o valor do texto emcriptografado.           
+    const campoResultado = document.querySelector('#msgResultado')
+    campoResultado.value = txtEncrypt
+
+    const form = document.querySelector("#formulario")
+    form.reset()
+
+}
+
+
+//* Script que impede ao usuário digitar números.
 
 const inputEncrypt = document.querySelector('.text-input')
 
@@ -36,16 +82,9 @@ inputEncrypt.addEventListener("keypress", function (e) {
 })
 //*
 
-document.querySelector('#btn-cripto').addEventListener('click', encrypt)
-
-function encrypt() {
-    const inputEncrypt = document.querySelector('.text-input').value;
-    // const textForEncrypt = inputEncrypt.value;
-
-    console.log(inputEncrypt)
+document.querySelector('#btn-cripto').addEventListener('click', criptografar)
+document.querySelector('#btn-descripto').addEventListener('click', descriptografar)
 
 
-
-}
 
 

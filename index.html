@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="shortcut icon" href="./imagens/favicon-txtEncrypt@web.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animation.css">
 </head>
@@ -13,7 +14,7 @@
 
   <main class="main">
     <section class="form box">
-      <form action="">
+      <form action="" id="formulario">
         <label for="input-texto" class="alertaDeErro">Apenas letras minúsculas, sem acento</label>
         <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
         <input class="btn" type="button" value="criptografar!" id="btn-cripto">
@@ -23,7 +24,7 @@
   
     <section class="msg box">
       <h2 id="">Mensagem criptografada:</h2>
-      <input class="text-input" type="text" id="msg"></input>
+      <input class="text-input" type="text" id="msgResultado"></input>
       <input class="btn" type="submit" value="copiar" id="btn-copy">
     </section>
   </main>
