@@ -20,6 +20,15 @@ Não permite acentuação
 */
 
 // Função encryptografar
+function print(texto) {
+    const cardMsg = document.querySelector('#cardMsg')
+
+    const txtMsg = document.createElement('p')
+    txtMsg.classList.add('msgEncrypt')
+
+    txtMsg.textContent = texto
+    cardMsg.appendChild(txtMsg)
+}
 
 function criptografar() {
 
@@ -37,6 +46,7 @@ function criptografar() {
     // seleciono o campo de resultados e retorno o valor do texto emcriptografado.           
     const campoResultado = document.querySelector('#msgResultado')
     campoResultado.value = txtEncrypt
+    print(txtEncrypt)
 
     const form = document.querySelector("#formulario")
     form.reset()
@@ -71,6 +81,10 @@ function copy() {
     
     alert("copiado para área de transferência.")
 }
+
+
+
+
 
 
 //* Script que impede ao usuário digitar números.
