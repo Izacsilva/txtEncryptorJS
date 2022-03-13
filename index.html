@@ -6,19 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="shortcut icon" href="./imagens/favicon-txtEncrypt@web.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animation.css">
 </head>
 <body>
-  <h1 class="titulo">código secreto</h1>
+  <header>
+    <h1 class="titulo"><img src="./imagens/alura_logotipo.svg" alt="Logotipo Alura."></h1> 
+  </header>
 
   <main class="main">
     <section class="form box">
       <form action="" id="formulario">
         <label for="input-texto" class="alertaDeErro">Apenas letras minúsculas, sem acento</label>
         <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
-        <input class="btn" type="button" value="criptografar!" id="btn-cripto">
-        <input class="btn" type="button" value="descriptografar!" id="btn-descripto">
+        <input class="btn btn-solid" type="button" value="Criptografar!" id="btn-cripto">
+        <input class="btn btn-stroke" type="button" value="Descriptografar!" id="btn-descripto">
       </form>
     </section>
   
@@ -26,8 +29,8 @@
       
       <input class="text-input" type="text" id="msgResultado"></input>
       <div class="group-btn">
-        <input class="btn" type="submit" value="copiar" id="btn-copy">
-        <input class="btn" type="submit" value="salvar" id="btn-copy">
+        <input class="btn btn-stroke" type="submit" value="Copiar" id="btn-copy">
+        <input class="btn btn-stroke" type="submit" value="Salvar" id="btn-save">
       </div>
     </section>
   </main>

@@ -28,6 +28,8 @@ function print(texto) {
 
     txtMsg.textContent = texto
     cardMsg.appendChild(txtMsg)
+
+    
 }
 
 function criptografar() {
@@ -82,6 +84,19 @@ function copy() {
     alert("copiado para área de transferência.")
 }
 
+function validation () {
+    const inputEncrypt = document.querySelector('#input-texto').value.length;
+    if (inputEncrypt == "") {
+        console.log("tá vazio")
+    }
+}
+
+function salvar() {
+    localStorage.setItem('Salvando', "arquivo salvo!")
+    console.log("salvou")
+}   
+
+
 
 
 
@@ -106,6 +121,7 @@ inputEncrypt.addEventListener("keypress", function (e) {
 document.querySelector('#btn-cripto').addEventListener('click', criptografar)
 document.querySelector('#btn-descripto').addEventListener('click', descriptografar)
 document.querySelector('#btn-copy').addEventListener('click', copy)
+document.querySelector("#btn-save").addEventListener('click', salvar)
 
 
 
