@@ -1,0 +1,11 @@
+@import url(_variable.css);
+@import url(_reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap');
+
+
+
+body {
+    background: var(--light-blue-bg);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+}

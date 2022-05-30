@@ -1,0 +1,32 @@
+@import url(../base/base.css);
+
+body {
+    background: var(--Light-blue-bg);
+}
+
+.btn {
+    background: var(--Dark-blue-300);background: var(--Dark-blue-300);
+    box-sizing: content-box;
+    border-radius: 2.4rem;
+    color: white;
+    cursor: pointer;
+    
+    font-weight: 400;
+    padding: 2.4rem;
+    transition: background 0.3s
+}
+
+.btn:hover {
+    background: var(--Dark-blue-400);
+}
+
+.btn.btn--stroke {
+    background: none;
+    border: solid 1px var(--Dark-blue-300);
+    color: var(--Dark-blue-300);
+    
+}
+
+.btn--stroke:hover {
+    background: var(--Light-blue-400);
+} 
