@@ -5,7 +5,7 @@ body {
 }
 
 .btn {
-    background: var(--Dark-blue-300);background: var(--Dark-blue-300);
+    background: var(--Dark-blue-300);
     box-sizing: content-box;
     border-radius: 2.4rem;
     color: white;
