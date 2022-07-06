@@ -1,0 +1,33 @@
+.form__input .form__input___textarea {
+    background-color: var(--Light-blue-bg);
+    border: none;
+    color: var(--Dark-blue-300);
+    font-family: 'Inter', sans-serif;
+    font-size: 2.8rem;
+    resize: none;
+    width: 100%;
+    height: 24rem;
+  }
+  .form__input___textarea:focus {
+    outline: none;
+  }
+  .form__input___textarea::placeholder {
+    color: var(--Dark-blue-300);
+    font-size: 2.8rem;
+  }
+  
+  .form__input___alert {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form__input___alert svg {
+    width: 1.6rem;
+    fill: var(--Gray-400);
+  }
+  .form__input___alert .alertDefault {
+    color: var(--Gray-400);
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+    line-height: 1.8rem;
+  }

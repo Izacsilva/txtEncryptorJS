@@ -1,4 +1,29 @@
 @import url(_variable.css);
-@import url(_reset.css);
 @import url(../components/header.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+body {
+    background-color: var(--Light-blue-bg);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+  }
+  
+.container {
+    width: 37.5rem;
+    margin-inline: auto;
+    /* border: 1px black solid; */
+  }
+  
+.wrapper {
+    width: inherit;
+    padding: 2.4rem 1.6rem;
+    
+  }
+  

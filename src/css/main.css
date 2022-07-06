@@ -1,0 +1,11 @@
+@import url(./components/button.css);
+@import url(./components/card-text.css);
+@import url(./components/input-text.css);
+
+
+.footer .rodape__paragrafo {
+    color: var(--Gray-300);
+    font-size: 1.4rem;
+    line-height: 150%;
+    text-align: center;
+  }
