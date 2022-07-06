@@ -80,7 +80,7 @@ body {
   width: 100%;
 }
 
-.form__btn .btn {
+.btn {
   background: var(--Dark-blue-300);
   box-sizing: content-box;
   border-radius: 2.4rem;
@@ -97,11 +97,11 @@ body {
   transition: background 0.3s
 }
 
-.form__btn .btn:hover {
+.btn:hover {
   background: var(--Dark-blue-400);
 }
 
-.form__btn .btn.btn--stroke {
+.btn--stroke {
   background: none;
   border: solid 0.1rem var(--Dark-blue-300);
   color: var(--Dark-blue-300);
@@ -112,60 +112,39 @@ body {
   background: var(--Light-blue-400);
 }
 
+.main__boxOutputText___cardResult {
+  background: white;
+  border-radius: 3.2rem;
+  box-shadow: 0 1.6rem 1.6rem rgba(0, 0, 0, 0.08);
 
-
-
-
-
-/* .box {
-  padding: 10px;
-  margin: 0 10px 0 10px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: white;
-  border-radius: 0.5em;
-  width: 30vw;
-  height: auto;
-}
-
-.btn {
-  border: 0;
-  color: white;
-  font-weight: bold;
-  background-color: blue;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 0.5em;
-  cursor: pointer;
-  transition: background-color 0.4s;
-}
-
-.btn:hover {
-  background-color: rgb(60, 112, 255);
-  
-}
-
-.btn:active {
-  background-color: blue;
-  transform: scale(0.98)
-}
-
-.text-input {
-  border-radius: 0.5em;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  display: block;
-  padding: 0.5em;
-  width: 100%;
-  height: 50px;
-}
-
-.rodape {
   display: flex;
-  justify-content: center;
-  
-  margin-top: 5rem;
-  width: 100%
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3.2rem;
+  width: 100%;
 }
 
-/* .text-input:focus{
-  color: red;
-} */
+.cardResult__title {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+  line-height: 120%;
+  
+}
+
+.cardResult__description {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  line-height: 150%;
+}
+
+.cardResult__btn {
+  width: 90%;
+}
+
+.footer .rodape__paragrafo {
+  color: var(--Gray-300);
+  font-size: 1.4rem;
+  line-height: 150%;
+  text-align: center;
+}
