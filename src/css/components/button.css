@@ -41,4 +41,16 @@
   .btn--stroke:hover {
     background: var(--Light-blue-400);
   }
-    
+  
+  @media  (min-width: 320px) and (min-width: 720px) {
+    .main__boxInputText .form__btn {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2.4rem;
+    }
+
+    .btn {
+      
+      width: 100%;
+    }
+  }

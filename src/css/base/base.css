@@ -16,14 +16,38 @@ body {
   }
   
 .container {
-    width: 37.5rem;
-    margin-inline: auto;
-    /* border: 1px black solid; */
+  margin-inline: auto;
+  padding: 2.4rem 1.6rem;
+    
+
   }
   
-.wrapper {
-    width: inherit;
-    padding: 2.4rem 1.6rem;
+.wrapper { 
     
+    
+  }
+
+    
+  @media  (min-width: 320px) and (min-width: 720px) {
+    .container {
+      width: 100vw;
+    }
+  }
+
+  @media (min-width: 721px) and (min-width: 900px) {
+    body {
+      display: flex;
+      gap: 8rem;
+      padding: 0 4rem;
+    }
+
+    .container {
+      height: 100vh;
+    }
+ 
+    header.container {
+      width: 10%;
+    }
+
   }
   

@@ -9,3 +9,24 @@
     line-height: 150%;
     text-align: center;
   }
+
+
+@media (min-width: 721px) and (min-width: 900px) {
+    .footer {
+      display: none;
+    }
+
+    .main {
+      display: flex;
+      gap: 8rem;
+    }
+
+    .main__boxInputText {
+      flex: 2;
+    }
+
+    .main__boxOutputText {
+      flex: 1;
+    }
+}
+
